@@ -1,6 +1,9 @@
 #Ignore API
 /config.py
 
+
+actor_list/movie.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

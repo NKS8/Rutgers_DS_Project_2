@@ -1,0 +1,63 @@
+CREATE TABLE "Actor_name" (
+    "Title_id" int   NOT NULL,
+    "Title" VARCHAR  NOT NULL,
+    "Preformer" VARCHAR   NOT NULL,
+    "Gender" int   NOT NULL,
+    CONSTRAINT "pk_Actor_name" PRIMARY KEY (
+        "Title_id"
+     )
+);
+CREATE TABLE "language_actor" (
+    "Title_id" int   NOT NULL,
+    "Language" VARCHAR    NOT NULL,
+    "Preformer" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_language_actor" PRIMARY KEY (
+        "Title_id"
+     )
+);
+
+CREATE TABLE "Release_date" (
+    "Pulled_ID" int   NOT NULL,
+    "Title_id" int   NOT NULL,
+    "Pulled_Release_Date" Date   NOT NULL,
+    "Premiere" Date   NOT NULL,
+    "Runtime" int   NOT NULL,
+    CONSTRAINT "pk_Release_date" PRIMARY KEY (
+        "Title_id"
+     )
+);
+
+CREATE TABLE "Genre_film" (
+    "Title_id" int   NOT NULL,
+    "Pulled_ID" int,
+    "Genre" VARCHAR   NOT NULL,
+    CONSTRAINT "pk_Genre_film" PRIMARY KEY (
+        "Title_id"
+     )
+);
+
+CREATE TABLE "Revenue_Made" (
+    "Title_id" int   NOT NULL,
+    "Budget" int   NOT NULL,
+    "Revenue" int   NOT NULL,
+    "Profit" int   NOT NULL
+);
+
+ALTER TABLE "Actor_name" ADD CONSTRAINT "fk_Actor_name_Title_id" FOREIGN KEY("Title_id")
+REFERENCES "language_actor" ("Title_id");
+
+
+
+ALTER TABLE "Release_date" ADD CONSTRAINT "fk_Release_date_Title_id" FOREIGN KEY("Title_id")
+REFERENCES "language_actor" ("Title_id");
+
+
+
+ALTER TABLE "Revenue_Made" ADD CONSTRAINT "fk_Revenue_Made_Title_id" FOREIGN KEY("Title_id")
+REFERENCES "Genre_film" ("Title_id");
+
+ALTER TABLE "language_actor" ADD CONSTRAINT "fk_language_actor_Title_id" FOREIGN KEY("Title_id")
+REFERENCES "Actor_name" ("Title_id");
+
+ALTER TABLE "Genre_film" ADD CONSTRAINT "fk_Genre_Pulled_ID" FOREIGN KEY("Pulled_ID")
+REFERENCES "Release_date" ("Pulled_ID");

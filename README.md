@@ -2,7 +2,7 @@
 
 **Project Name:** "What are we watching?" (a.k.a Netflix, with absolutely no chill!)"
  
-**Members:** [Harlan Brasek](https://github.com/habrasek), [Okyere Gyebi](https://github.com/Gyebi82), [Lovensky Lubin](https://github.com/Lubinl), [Enkhsanaa Sommers](https://github.com/NKS8)
+**Members:** [Harlan Brasek](https://github.com/habrasek), [Okyere Gyebi](https://github.com/Gyebi82), [Lovensky Lubin](https://github.com/Lubinl)
 
 **Table of Contents:**
 

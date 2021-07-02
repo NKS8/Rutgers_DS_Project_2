@@ -15,7 +15,7 @@
 The sources of this project were extracted from:
 1.  Kaggle ([NetflixOriginals.CSV](https://www.kaggle.com/luiscorter/netflix-original-films-imdb-scores))
 2. [TMDB](https://www.themoviedb.org/) (for API calls)
-3. JSON file (i.e. ?)
+3. IMDB json [Kaggle](https://www.kaggle.com/gorochu/complete-imdb-movies-dataset)
 #
 # Summary
 
@@ -32,7 +32,7 @@ PostgreSQL was our choice because we used it the most to run queries as SQLite w
 1. netflix- includes the title, genre, premeire date, run time, imdb rating, and languages of a movie or TV show from Netflix
 2. performers- the id number, movie id, performer name, and gender of the performers from the Netflix shows and movies
 3. tmdb- included tmdb movie id number, title, release date, budget, revenue, and profit (i.e. created manually using Profit and udget data) of the Netflix productions
-4. actor_fimls - included the performer names and movies of over 50,000 movies
+4. actor_films - included the performer names and movies of over 50,000 movies
 
 
 ## Querying
@@ -50,3 +50,16 @@ The third query takes Netflix names and adds their release dates, but also takes
 # Technologies and Libraries
 
 # Project Instructions
+In order to create the actor_films table, a lot of work had to be done.  A massive json file called 'movie.json' had to be handled, unfortunately it is to big to be uploaded to github.
+
+As one can see, the actors column when pulled into a DataFrame is in list form.  The end goal is to have a DataFrame such that every actor in each list will have their own row, with the movie in the base row right next to them.  For instance Timothee Chalamet, Liev Schreiber, and Elle Fanning should each have their own row with "A rainy day in New York" written next to it.
+
+![image](https://github.com/Lubinl/Rutgers_DS_Project_2/blob/119336cb963e0862cafef1e3e5513c639f7ba217/screenshots/step1.png)
+
+Next all of the extraneous rows must be deleted and a list of titles and a list of the lists of actors must be stored in their own variables.  Then with copied_movies_list, you count the number of performers in each list and repeat the name of the movie that many times.  
+
+![image](https://github.com/Lubinl/Rutgers_DS_Project_2/blob/119336cb963e0862cafef1e3e5513c639f7ba217/screenshots/step2.png)
+
+In order to make the final DataFrame to be added to the 'actors.csv' the two elemets needed are the copied_movies_list and a list of the unwrapped actors.  The unwrapped actors is simply unlisting all of the actors and putting them into their own list.  The result is this:
+
+![image](https://github.com/Lubinl/Rutgers_DS_Project_2/blob/119336cb963e0862cafef1e3e5513c639f7ba217/screenshots/step3.png)

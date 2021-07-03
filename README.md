@@ -48,9 +48,28 @@ The third query takes Netflix names and adds their release dates, but also takes
 #
 
 # Technologies and Libraries
+Programming and Scripting languages used the following programs pgAdmin4 (Version 5.2 (4280.88)) and Jupyter Notebook (Version 6.3.0). SQL ERD was composed with the use of [QuickDBD](https://www.quickdatabasediagrams.com/).
+
+Applied use of the following libraries: 
+- Pandas
+- Numpy
+- Requests
+- JSON
+- Time
+- Datetime
 
 # Project Instructions
-In order to create the actor_films table, a lot of work had to be done.  A massive json file called 'movie.json' had to be handled, unfortunately it is to big to be uploaded to github.
+Processing of the NetflixOriginals.csv file, required of of to first import into Jupyter notebook. We then converted the the 'Premiere' column from standard (e.g. January 1, 2021) date to ADATEw (e.g. 01-01-2021). We then verified that the Netflix CSV does not contain any null values. At this stage we proceed in pulling API calls form the TMDB site. We begin the first call by created empty list for the 'movie id', 'movie release date', and 'movie title'. Prior to beggining the for loop, we create a series of all movies within the NetflixOriginals dataframe, under the name movies. Using TMDB's API documentation we create a query url, to get responses. Within this For loop we try another loop through the results and pull 'title', 'id', and 'release_date', except in the case of the movie not being found.
+
+This data was then used to create our 'pulled_flix_df', which consisted of an additional twop empty columns: Budget and Revenue. We than proceed to run a second API call. This time around we create two empty list for: 'Budget', 'Revenue', and 'drop_index'. We than run another for loop through our query url trying to pull buedgt and revenue data, except in the case of the data not eing there to pull. Once the financial data is there, we are able to populate the 'Profit' column with this info. This DataFrame was then saved as a CSV file. Using the data from this latest pull, we're ablbe to create the 'cast_df' dataframe with 'Movie_id', 'Move', and 'Premiere'. While leaving to an additional two empty rows called: 'Preformer' and 'Gender'.
+
+Finally, for the last API call, we create 3 empty list: 'gender', 'preformer', and 'drop_index'. We then proceed  looping through the rows of our 'cast_df' dataframe entering the movie name and movie id of each row into our query url. Trying to populate all the preformer data and their corresponding gender into lists. Within this attempt we run a loop throuhg results and append the data into our 'preformer' and 'preformer gender' lists. If no data is found, the index of that row is added to the drop_index column. 
+
+The remaining of the Movie_cleaning file consist of creating 'new_cast_df', consisting of: movie id, preformer, and gender. Making movie id the index and exploding the remaining columns and saved as a csv (i.e. PulledCastingData.csv). We then rename the 'Pulled_Movie_Name' of the pulled data csv, to 'title. Which is then merged with the initial dataframe (how='left' and on='Title'). Following this, we rename the 'movie_id' to 'pulled_id'. Which was merged with the previous merged file, to create our Master table.
+
+In order to create the actor_films table, a lot of work had to be done. 
+
+ A massive json file called 'movie.json' had to be handled, unfortunately it is to big to be uploaded to github.
 
 As one can see, the actors column when pulled into a DataFrame is in list form.  The end goal is to have a DataFrame such that every actor in each list will have their own row, with the movie in the base row right next to them.  For instance Timothee Chalamet, Liev Schreiber, and Elle Fanning should each have their own row with "A rainy day in New York" written next to it.
 

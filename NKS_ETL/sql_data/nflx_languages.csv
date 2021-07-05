@@ -1,0 +1,224 @@
+lang_id,languages,frequency
+0,English,62002
+1,Spanish,1941
+2,French,1515
+3,German,861
+4,Italian,745
+5,n,596
+6,i,588
+7,s,506
+8,h,502
+9,Russian,485
+10,l,445
+11,g,437
+12,E,422
+13,Japanese,400
+14,Mandarin,241
+15,Arabic,234
+16,Latin,190
+17,Cantonese,145
+18,Portuguese,143
+19,Hebrew,142
+20,Hindi,138
+21,a,137
+22,Korean,109
+23,Chinese,101
+24,e,91
+25,Greek,86
+26,Swedish,79
+27,American Sign Language,76
+28,Vietnamese,71
+29,Polish,67
+30,Persian,65
+31,Hungarian,64
+32,r,61
+33,Yiddish,61
+34,Ukrainian,53
+35,Tagalog,50
+36,Dutch,49
+37,d,49
+38,p,49
+39,Turkish,47
+40,Romanian,44
+41,Filipino,44
+42,Thai,41
+43,Danish,41
+44,S,41
+45,Czech,35
+46,H,35
+47,u,35
+48,o,35
+49,t,33
+50,Norwegian,32
+51,Serbian,30
+52,Afrikaans,29
+53,None,27
+54,Serbo-Croatian,27
+55,Indonesian,26
+56,Urdu,26
+57,c,25
+58,Swahili,25
+59,I,23
+60,F,23
+61,Armenian,22
+62,Icelandic,22
+63,Irish,22
+64,Finnish,20
+65,Punjabi,18
+66,Scottish Gaelic,17
+67,Bulgarian,17
+68,Navajo,17
+69,Hawaiian,17
+70,P,15
+71,Khmer,14
+72,Esperanto,13
+73,Sioux,13
+74,Pushto,12
+75,Dari,11
+76,Klingon,11
+77,Zulu,11
+78,Xhosa,11
+79,Tamil,10
+80,Albanian,10
+81,Croatian,10
+82,T,10
+83,Tibetan,9
+84,Malay,9
+85,Welsh,9
+86,Yoruba,9
+87,Bosnian,9
+88,K,8
+89,Inuktitut,8
+90,Bengali,8
+91,Quechua,8
+92,J,8
+93,Nepali,8
+94,North American Indian,8
+95,Somali,8
+96,Kurdish,8
+97,Apache languages,8
+98,Assyrian Neo-Aramaic,7
+99,m,7
+100,Shanghainese,7
+101,Telugu,7
+102,k,7
+103,M,7
+104,Catalan,6
+105,Egyptian (Ancient),6
+106,G,6
+107,Malayalam,6
+108,Gujarati,6
+109,Aramaic,6
+110,Georgian,6
+111,Polynesian,6
+112,"Greek, Ancient (to 1453)",6
+113,Maya,6
+114,Sign Languages,5
+115,Swiss German,5
+116,Marathi,5
+117,Sanskrit,5
+118,Slovak,5
+119,Amharic,5
+120,Haitian,5
+121,Wolof,4
+122,Latvian,4
+123,Syriac,4
+124,Estonian,4
+125,Aboriginal,4
+126,w,4
+127,Basque,4
+128,Cree,4
+129,Maori,3
+130,Algonquin,3
+131,Burmese,3
+132,Slovenian,3
+133,Brazilian Sign Language,3
+134,Min Nan,3
+135,Macedonian,3
+136,Ladino,3
+137,Akan,3
+138,Middle English,3
+139,Kannada,3
+140,Berber languages,3
+141,Lao,3
+142,Hmong,3
+143,Mohawk,3
+144,Ibo,3
+145,Southern Sotho,3
+146,Mongolian,3
+147,D,3
+148,Lithuanian,3
+149,Saami,2
+150,Lingala,2
+151,R,2
+152,"Norse, Old",2
+153,British Sign Language,2
+154,Nahuatl,2
+155,Visayan,2
+156,French Sign Language,2
+157,Mende,2
+158,Greenlandic,2
+159,Shoshoni,2
+160,Pawnee,2
+161,A,2
+162,Luxembourgish,2
+163,Belarusian,2
+164,B,2
+165,Cheyenne,2
+166,Flemish,2
+167,Old English,2
+168,Scots,2
+169,Crow,2
+170,Romany,2
+171,Samoan,2
+172,Papiamento,2
+173,Malagasy,1
+174,Kashmiri,1
+175,Sicilian,1
+176,Malecite-Passamaquoddy,1
+177,Kirundi,1
+178,Arapaho,1
+179,Rotuman,1
+180,Acholi,1
+181,b,1
+182,Central American Indian languages,1
+183,Low German,1
+184,Cherokee,1
+185,Tswana,1
+186,Kinyarwanda,1
+187,Mixtec,1
+188,Nyanja,1
+189,Tupi,1
+190,Creek,1
+191,Nama,1
+192,Kazakh,1
+193,Sinhalese,1
+194,Kuna,1
+195,Japanese Sign Language,1
+196,Tigrigna,1
+197,Hakka,1
+198,Sindarin,1
+199,Tlingit,1
+200,N,1
+201,Chechen,1
+202,Tok Pisin,1
+203,Hokkien,1
+204,Rajasthani,1
+205,Aidoukrou,1
+206,Bambara,1
+207,Cornish,1
+208,Turkmen,1
+209,Uzbek,1
+210,Indian Sign Language,1
+211,Athapascan languages,1
+212,U,1
+213,q,1
+214,Hopi,1
+215,Balinese,1
+216,Spanish Sign Language,1
+217,Washoe,1
+218,Maltese,1
+219,y,1
+220,Tonga,1
+221,C,1
+222,Tzotzil,1

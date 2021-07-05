@@ -65,27 +65,3 @@ CREATE TABLE "actors_table" (
     "actor_id" INT   NOT NULL
 );
 
-ALTER TABLE "genre_table" ADD CONSTRAINT "fk_genre_table_title_id" FOREIGN KEY("title_id")
-REFERENCES "nflx_movie" ("title_id");
-
-ALTER TABLE "genre_table" ADD CONSTRAINT "fk_genre_table_genre_id" FOREIGN KEY("genre_id")
-REFERENCES "nflx_genres" ("genre_id");
-
-ALTER TABLE "language_table" ADD CONSTRAINT "fk_language_table_title_id" FOREIGN KEY("title_id")
-REFERENCES "nflx_movie" ("title_id");
-
-ALTER TABLE "language_table" ADD CONSTRAINT "fk_language_table_lang_id" FOREIGN KEY("lang_id")
-REFERENCES "nflx_languages" ("lang_id");
-
-ALTER TABLE "runtime_table_cln" ADD CONSTRAINT "fk_runtime_table_cln_title_id" FOREIGN KEY("title_id")
-REFERENCES "nflx_movie" ("title_id");
-
-ALTER TABLE "runtime_table_cln" ADD CONSTRAINT "fk_runtime_table_cln_rt_id" FOREIGN KEY("rt_id")
-REFERENCES "nflx_m_runtime" ("rt_id");
-
-ALTER TABLE "actors_table" ADD CONSTRAINT "fk_actors_table_title_id" FOREIGN KEY("title_id")
-REFERENCES "nflx_movie" ("title_id");
-
-ALTER TABLE "actors_table" ADD CONSTRAINT "fk_actors_table_actor_id" FOREIGN KEY("actor_id")
-REFERENCES "nflx_actors" ("actor_id");
-

@@ -48,8 +48,8 @@ genre_id,genre,freq
 46,p,26
 47,H,26
 48,w,20
-49,M,19
-50,F,19
+49,F,19
+50,M,19
 51,v,17
 52,News,16
 53,g,14
@@ -64,5 +64,5 @@ genre_id,genre,freq
 62,b,2
 63,U,1
 64,Z,1
-65,Game-Show,1
-66,Talk-Show,1
+65,Talk-Show,1
+66,Game-Show,1

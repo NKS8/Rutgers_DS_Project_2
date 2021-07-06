@@ -35,11 +35,11 @@ PostgreSQL was our choice because we used it the most to run queries as SQLite w
      and (budget data) of the Netflix productions
   4. actor_films - included the performer names and movies of over 50,000 movies
   5. In additional tables were created:
-1.b.1   - ntflx_movies
-      - nflx_runtime
-      - nflx_actor
-      - nflx_genres
-      - ntfl_languages
+1.b.1  - ntflx_movies
+       - nflx_runtime
+       - nflx_actor
+       - nflx_genres
+       - ntfl_languages
    
 ## Querying
 
@@ -52,10 +52,11 @@ The second query requested all of the additional films that Netflix star Selena 
 The third query takes Netflix names and adds their release dates, but also takes different works with the same titles to show the need to be alert when using SQL
 ![image](https://github.com/Lubinl/Rutgers_DS_Project_2/blob/d82f3b625ae60c30978b2d593024f535826ca2a9/images/release.png)
 
-In addition, 1.b tables are created and data iported to the tables. 
-    1.b.2  
-     - Run tested querties run for tables
+In addition, 1.b tables are created and data were imported to the tables. 
+1.b.2  
+     - Tested all tables by running queries for each tables
      - Run some queries extract some information such as testing occurences of the movies and searched some movie titles.
+     
 # 
 
 # Technologies and Libraries
@@ -72,7 +73,7 @@ Applied use of the following libraries:
 # Project Instructions
 Processing of the NetflixOriginals.csv file, required of of to first import into Jupyter notebook. We then converted the the 'Premiere' column from standard (e.g. January 1, 2021) date to ADATEw (e.g. 01-01-2021). We then verified that the Netflix CSV does not contain any null values. At this stage we proceed in pulling API calls form the TMDB site. We begin the first call by created empty list for the 'movie id', 'movie release date', and 'movie title'. Prior to beggining the for loop, we create a series of all movies within the NetflixOriginals dataframe, under the name movies. Using TMDB's API documentation we create a query url, to get responses. Within this For loop we try another loop through the results and pull 'title', 'id', and 'release_date', except in the case of the movie not being found.
 
-This data was then used to create our 'pulled_flix_df', which consisted of an additional twop empty columns: Budget and Revenue. We than proceed to run a second API call. This time around we create two empty list for: 'Budget', 'Revenue', and 'drop_index'. We than run another for loop through our query url trying to pull buedgt and revenue data, except in the case of the data not eing there to pull. Once the financial data is there, we are able to populate the 'Profit' column with this info. This DataFrame was then saved as a CSV file. Using the data from this latest pull, we're ablbe to create the 'cast_df' dataframe with 'Movie_id', 'Move', and 'Premiere'. While leaving to an additional two empty rows called: 'Preformer' and 'Gender'.
+This data was then used to create our 'pulled_flix_df', which consisted of an additional two empty columns: Budget and Revenue. We than proceed to run a second API call. This time around we create two empty list for: 'Budget', 'Revenue', and 'drop_index'. We than run another for loop through our query url trying to pull buedgt and revenue data, except in the case of the data not eing there to pull. Once the financial data is there, we are able to populate the 'Profit' column with this info. This DataFrame was then saved as a CSV file. Using the data from this latest pull, we're ablbe to create the 'cast_df' dataframe with 'Movie_id', 'Move', and 'Premiere'. While leaving to an additional two empty rows called: 'Preformer' and 'Gender'.
 
 Finally, for the last API call, we create 3 empty list: 'gender', 'preformer', and 'drop_index'. We then proceed  looping through the rows of our 'cast_df' dataframe entering the movie name and movie id of each row into our query url. Trying to populate all the preformer data and their corresponding gender into lists. Within this attempt we run a loop throuhg results and append the data into our 'preformer' and 'preformer gender' lists. If no data is found, the index of that row is added to the drop_index column. 
 

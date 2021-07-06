@@ -51,10 +51,13 @@ The second query requested all of the additional films that Netflix star Selena 
 The third query takes Netflix names and adds their release dates, but also takes different works with the same titles to show the need to be alert when using SQL
 ![image](https://github.com/Lubinl/Rutgers_DS_Project_2/blob/d82f3b625ae60c30978b2d593024f535826ca2a9/images/release.png)
 
-In addition, 1.b tables are created and data were imported to the tables. 
+In addition, 1.b tables are created and data were imported to the tables.
+
 1.b.2  
-     - Tested all tables by running queries for each tables
+     - Tested all tables by running queries for each tables.
      - Run some queries extract some information such as testing occurences of the movies and searched some movie titles.
+     - For example, run query on ntfl_languages table where language was an Italian.
+     
      
 # 
 

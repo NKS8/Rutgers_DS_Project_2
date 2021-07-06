@@ -20,9 +20,8 @@ The sources of this project were extracted from:
 # Summary
 
 ## Extracting & Transforming Data
-After reviewing the API docuentation in TMDB site. We concluded that we would need to pull the corresponding "Movie ID", for each film in our CSV. With this information we were than able to call in financial data (i.e. film budget/revenue) and preformer data (i.e. cast and gender).
-In order to proceed into importing this data into a data base, we needed to run internal checks within our Jupyter Notebook files to make sure that, we were in fact pulling the appropriate data.
-
+1. After reviewing the API docuentation in TMDB site. We concluded that we would need to pull the corresponding     "Movie ID", for each film  in our CSV. With this information   we were than able to call in financial data (i.e.     film budget/revenue) and preformer data (i.e. cast and gender).In order to proceed into importing this data into a data base, we needed to run internal checks within our Jupyter Notebook files to make sure that, we were in fact pulling the appropriate data.
+3. Combined NetflixOriginals1.csv and movie.json files are impoprted into jupyter notebook, and cleaned for importing into Postgress database as a movie_db. 
 
 ## Establishing the tables
 

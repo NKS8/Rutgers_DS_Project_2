@@ -28,13 +28,19 @@ In order to proceed into importing this data into a data base, we needed to run 
 
 PostgreSQL was our choice because we used it the most to run queries as SQLite was often done through Python.
 
-4 tables were created to query from:
-1. netflix- includes the title, genre, premeire date, run time, imdb rating, and languages of a movie or TV show from Netflix
-2. performers- the id number, movie id, performer name, and gender of the performers from the Netflix shows and movies
-3. tmdb- included tmdb movie id number, title, release date, budget, revenue, and profit (i.e. created manually using Profit and udget data) of the Netflix productions
-4. actor_films - included the performer names and movies of over 50,000 movies
-
-
+1.a 4 tables were created to query from:
+  1. netflix- includes the title, genre, premeire date, run time, imdb rating, and languages of a movie or TV show from Netflix
+  2. performers- the id number, movie id, performer name, and gender of the performers from the Netflix shows and movies
+  3. tmdb- included tmdb movie id number, title, release date, budget, revenue, and profit (i.e. created manually using Profit 
+     and (budget data) of the Netflix productions
+  4. actor_films - included the performer names and movies of over 50,000 movies
+  5. In additional tables were created:
+1.b.1   - ntflx_movies
+      - nflx_runtime
+      - nflx_actor
+      - nflx_genres
+      - ntfl_languages
+   
 ## Querying
 
 The first query asked to make a table with the netflix performer
@@ -45,7 +51,12 @@ The second query requested all of the additional films that Netflix star Selena 
 
 The third query takes Netflix names and adds their release dates, but also takes different works with the same titles to show the need to be alert when using SQL
 ![image](https://github.com/Lubinl/Rutgers_DS_Project_2/blob/d82f3b625ae60c30978b2d593024f535826ca2a9/images/release.png)
-#
+
+In addition, 1.b tables are created and data iported to the tables. 
+    1.b.2  
+     - Run tested querties run for tables
+     - Run some queries extract some information such as testing occurences of the movies and searched some movie titles.
+# 
 
 # Technologies and Libraries
 Programming and Scripting languages used the following programs pgAdmin4 (Version 5.2 (4280.88)) and Jupyter Notebook (Version 6.3.0). SQL ERD was composed with the use of [QuickDBD](https://www.quickdatabasediagrams.com/).
